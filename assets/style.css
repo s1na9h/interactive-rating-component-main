@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article {
+  margin-block: auto;
+  max-width: 20rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  font-family: "Overpass";
+  background-color: hsl(213deg, 19%, 18%);
+}
+.article .display1 h2 {
+  color: hsl(0deg, 0%, 100%);
+}
+.article .display1 p {
+  color: hsl(216deg, 12%, 54%);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+.article .display1 ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding-inline: 0;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.article .display1 ul li {
+  background-color: hsl(216deg, 12%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  color: hsl(217deg, 12%, 63%);
+  border-radius: 50%;
+}
+.article .display1 ul li:hover {
+  background-color: white;
+  color: hsl(25deg, 97%, 53%);
+}
+.article .display1 ul li.active {
+  background-color: hsl(216deg, 12%, 54%);
+  color: hsl(0deg, 0%, 100%);
+}
+.article .display1 button {
+  font-family: "Overpass";
+  border: 0;
+  font-weight: 400;
+  color: white;
+  background-color: hsl(25deg, 97%, 53%);
+  border-radius: 1.25rem;
+  width: 100%;
+  height: 2.5rem;
+}
+.article .display1 button:hover {
+  background-color: white;
+  color: hsl(25deg, 97%, 53%);
+}
+.article .display1 .image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(216deg, 12%, 8%);
+}
+.article .display1 .image img {
+  display: block;
+}
+.article .display2 {
+  display: none;
+  text-align: center;
+}
+.article .display2 .select {
+  padding-inline: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  gap: 0.2rem;
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(216deg, 12%, 8%);
+  height: 2rem;
+}
+.article .display2 .image img {
+  margin-bottom: 0.8rem;
+}
+.article .display2 h3 {
+  color: white;
+}
+.article .display2 p {
+  color: hsl(217deg, 12%, 63%);
+}/*# sourceMappingURL=style.css.map */
