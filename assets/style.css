@@ -1,9 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 body {
+  background-color: hsl(216deg, 12%, 8%);
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+body.light {
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 2rem;
+  background-color: #FFFBEB;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  color: black;
+  font-family: sans-serif;
+  border-radius: 1rem;
+}
+
+.toggle.light {
+  background-color: #F8CBA6;
+  color: #FFFBEB;
 }
 
 .article {
@@ -16,6 +41,9 @@ body {
 }
 .article .display1 h2 {
   color: hsl(0deg, 0%, 100%);
+}
+.article .display1 h2.light {
+  color: black;
 }
 .article .display1 p {
   color: hsl(216deg, 12%, 54%);
@@ -40,6 +68,12 @@ body {
   color: hsl(217deg, 12%, 63%);
   border-radius: 50%;
 }
+.article .display1 ul li.light {
+  background-color: #FFE7CC;
+}
+.article .display1 ul li.light:hover {
+  background-color: #F8CBA6;
+}
 .article .display1 ul li:hover {
   background-color: white;
   color: hsl(25deg, 97%, 53%);
@@ -58,6 +92,9 @@ body {
   width: 100%;
   height: 2.5rem;
 }
+.article .display1 button.light:hover {
+  background-color: #F8CBA6;
+}
 .article .display1 button:hover {
   background-color: white;
   color: hsl(25deg, 97%, 53%);
@@ -73,6 +110,9 @@ body {
 }
 .article .display1 .image img {
   display: block;
+}
+.article .display1 .image.light {
+  background-color: #FFE7CC;
 }
 .article .display2 {
   display: none;
@@ -97,4 +137,8 @@ body {
 }
 .article .display2 p {
   color: hsl(217deg, 12%, 63%);
+}
+
+.article.light {
+  background-color: #FFFBEB;
 }/*# sourceMappingURL=style.css.map */

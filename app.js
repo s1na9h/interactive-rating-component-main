@@ -6,11 +6,10 @@ function onItemClick(e) {
     }
     element.classList.add("active");
     document.querySelector('.number').innerHTML =  document.querySelector('.active').innerHTML;
-    console.log(q);
+
 }
 
-// const selectedItem = document.querySelector('li.li.active').value;
-document.querySelector('.number').innerHTML = 
+
 document.querySelector('button').addEventListener('click', function(e){
     if(document.querySelector('.active')){
         document.querySelector('.display1').style.display = "none"
@@ -22,3 +21,20 @@ document.querySelector('button').addEventListener('click', function(e){
     }
 })
 
+const toggleBtn = document.querySelector('.toggle')
+const darks= document.querySelectorAll('.dark')
+toggleBtn.addEventListener('click', ()=>{if(document.querySelector('.dark')){
+    for(let i of darks){
+        i.classList.add('light')
+        i.classList.remove('dark')
+    }
+    toggleBtn.innerHTML='Light'
+}
+    else{
+        for(let i of darks){
+            i.classList.add('dark')
+            i.classList.remove('light')
+        }
+        toggleBtn.innerHTML='Dark'
+    }
+})

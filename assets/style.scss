@@ -2,12 +2,34 @@
 @import './fonts';
 
 body {
+    background-color: $very-dark-blue;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+body.light {
+    background-color: $white;
+}
 
+.toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 2rem;
+    background-color: $milky;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    color: black;
+    font-family: sans-serif;
+    border-radius: 1rem;
+}
+.toggle.light {
+background-color: $dark-cream;
+color: $milky;
+}
 .article {
     margin-block: auto;
     max-width: 20rem;
@@ -17,8 +39,12 @@ body {
     background-color: $dark-blue;
     
     .display1 {
+        
         h2 {
             color: $white;
+        }
+        h2.light {
+            color: black;
         }
         
         p {
@@ -46,6 +72,12 @@ body {
                 color: $light-grey;
                 border-radius: 50%;
             }
+            li.light {
+                background-color: $cream;
+            } 
+            li.light:hover {
+                background-color: $dark-cream;
+            } 
     
             li:hover {
                 background-color: white;
@@ -68,6 +100,9 @@ body {
             width: 100%;
             height: 2.5rem;
         }
+        button.light:hover {
+            background-color: $dark-cream;
+        }
     
         button:hover {
             background-color: white;
@@ -82,11 +117,16 @@ body {
             align-items: center;
             justify-content: center;
             background-color: $very-dark-blue;
+            
             img {
                 display: block;
             }
         }
+        .image.light {
+            background-color: $cream;
+        }
     }
+    
     .display2 {
         display: none;
         text-align: center;
@@ -116,4 +156,9 @@ body {
         }
     }
 }
+.article.light {
+    background-color: $milky;
+}
+
+
 
